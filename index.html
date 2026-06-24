@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinay P | AI & ML Engineer Portfolio</title>
+    <meta name="description" content="Professional student e-portfolio of Vinay P, pursuing B.Tech in Artificial Intelligence and Machine Learning at REVA University. Discover projects, technical skills, and achievements.">
+    <!-- Link to custom styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="light">
+
+    <!-- ==========================================
+         NAVIGATION HEADER
+         ========================================== -->
+    <header class="header-nav">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <i data-lucide="cpu"></i>
+                <span>Vinay.P</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <!-- Actions Menu -->
+            <div class="nav-actions">
+                <!-- Theme Toggle -->
+                <button class="icon-btn" id="theme-toggle" aria-label="Toggle Theme">
+                    <i data-lucide="sun" class="theme-icon-light"></i>
+                    <i data-lucide="moon" class="theme-icon-dark"></i>
+                </button>
+
+                <!-- Share Button -->
+                <button class="icon-btn" id="share-btn" aria-label="Share Portfolio">
+                    <i data-lucide="share-2"></i>
+                </button>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle Mobile Menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ==========================================
+             HERO SECTION
+             ========================================== -->
+        <section id="home" class="hero">
+            <!-- Animated Canvas Background -->
+            <canvas id="hero-canvas"></canvas>
+
+            <div class="container hero-grid">
+                <div class="hero-content reveal-left">
+                    <div class="hero-badge">
+                        <i data-lucide="sparkles"></i>
+                        <span>AI & ML Student</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="text-gradient">Vinay P</span>
+                    </h1>
+                    <div class="hero-subtitle">
+                        <span id="typed-text"></span><span class="typing-cursor">|</span>
+                    </div>
+                    <p class="hero-desc">
+                        1st Year B.Tech student in Artificial Intelligence and Machine Learning at REVA University. Passionate about building intelligent systems, data exploration, and solving complex problems with code.
+                    </p>
+                    <div class="hero-btns">
+                        <a href="#contact" class="btn btn-primary">
+                            <span>Get In Touch</span>
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                        <a href="#projects" class="btn btn-secondary">
+                            <span>View Projects</span>
+                            <i data-lucide="code-xml"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image-wrapper reveal-right">
+                    <!-- Rotating Morphing Frame -->
+                    <div class="hero-image-border">
+                        <div class="hero-image-container">
+                            <img src="assets/profile.png" alt="Vinay P Profile Portrait">
+                        </div>
+                    </div>
+
+                    <!-- Floating Badges -->
+                    <div class="floating-badge badge-1">
+                        <i data-lucide="brain-circuit" style="color: var(--accent-blue);"></i>
+                        <span>Neural Nets</span>
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <i data-lucide="bar-chart-3" style="color: var(--accent-cyan);"></i>
+                        <span>Data Science</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             ABOUT ME SECTION
+             ========================================== -->
+        <section id="about" class="section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>About Me</h2>
+                    <p>My journey into the world of computer intelligence and software development.</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text reveal-left">
+                        <h3>Passionate AIML Student</h3>
+                        <p class="about-highlight">
+                            Fascinated by how data and algorithms can simulate intelligence and solve real-world struggles.
+                        </p>
+                        <p>
+                            Currently in my first year at REVA University, I am focusing my engineering studies on core artificial intelligence architectures and machine learning patterns. I love translating math and logical algorithms into working applications.
+                        </p>
+                        <p>
+                            I am a continuous learner, active programmer, and problem solver who enjoys staying updated with technical trends, participating in coding exercises, and developing interesting software applications.
+                        </p>
+                    </div>
+
+                    <div class="about-details reveal-right">
+                        <!-- Card 1 -->
+                        <div class="glass-panel detail-card">
+                            <i data-lucide="brain"></i>
+                            <h4>AI & ML Enthusiast</h4>
+                            <p>Deep interest in predictive modeling, deep learning networks, and automation processes.</p>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="glass-panel detail-card">
+                            <i data-lucide="database"></i>
+                            <h4>Data Explorer</h4>
+                            <p>Analyzing datasets using Python, Pandas, and visualization libraries to find patterns.</p>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="glass-panel detail-card">
+                            <i data-lucide="terminal"></i>
+                            <h4>Software Creator</h4>
+                            <p>Writing neat, reusable code to build desktop, command line, and visual tools.</p>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="glass-panel detail-card">
+                            <i data-lucide="graduation-cap"></i>
+                            <h4>Continuous Learner</h4>
+                            <p>Constantly picking up new frameworks, algorithms, and practical development skills.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             EDUCATION SECTION
+             ========================================== -->
+        <section id="education" class="section-padding" style="background-color: var(--bg-tertiary); transition: background var(--transition-normal);">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Education</h2>
+                    <p>My academic path and qualifications.</p>
+                </div>
+
+                <div class="education-timeline reveal">
+                    <!-- REVA University Timeline Item -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="glass-panel timeline-content">
+                            <span class="timeline-year">2025 - Present</span>
+                            <h3 class="timeline-title">B.Tech in Artificial Intelligence & Machine Learning</h3>
+                            <h4 class="timeline-subtitle">REVA University</h4>
+                            <p class="timeline-desc">
+                                Pursuing 1st year of Bachelor of Technology. Gaining structural foundations in Mathematics, Computer Programming, Algorithms, and Core Engineering Concepts. Actively participating in technical student chapters and engineering projects.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             TECHNICAL SKILLS SECTION
+             ========================================== -->
+        <section id="skills" class="section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Technical Skills</h2>
+                    <p>Technologies, libraries, and tools I work with daily.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Programming Languages -->
+                    <div class="glass-panel skills-category reveal-left">
+                        <h3>
+                            <i data-lucide="braces"></i>
+                            <span>Programming Languages</span>
+                        </h3>
+                        <div class="skill-list">
+                            <!-- Skill Item -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Python</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percent="85%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill Item -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Java</span>
+                                    <span>70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percent="70%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill Item -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>C++</span>
+                                    <span>65%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percent="65%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill Item -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>C</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percent="75%"></div>
+                                </div>
+                            </div>
+                            <!-- Skill Item -->
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>HTML</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percent="80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Libraries & Tools -->
+                    <div class="glass-panel skills-category reveal-right">
+                        <h3>
+                            <i data-lucide="wrench"></i>
+                            <span>Libraries & Tools</span>
+                        </h3>
+                        <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+                            Key software tools, libraries, and frameworks I leverage to design machine learning structures and build applications.
+                        </p>
+                        
+                        <div class="tools-tags">
+                            <div class="tool-tag">
+                                <i data-lucide="line-chart"></i>
+                                <span>Pandas</span>
+                            </div>
+                            <div class="tool-tag">
+                                <i data-lucide="binary"></i>
+                                <span>NumPy</span>
+                            </div>
+                            <div class="tool-tag">
+                                <i data-lucide="area-chart"></i>
+                                <span>Matplotlib</span>
+                            </div>
+                            <div class="tool-tag">
+                                <i data-lucide="layout"></i>
+                                <span>Tkinter</span>
+                            </div>
+                            <div class="tool-tag">
+                                <i data-lucide="laptop"></i>
+                                <span>VS Code</span>
+                            </div>
+                            <div class="tool-tag">
+                                <i data-lucide="github"></i>
+                                <span>GitHub</span>
+                            </div>
+                            <div class="tool-tag">
+                                <i data-lucide="git-branch"></i>
+                                <span>Git</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             PROJECTS SECTION
+             ========================================== -->
+        <section id="projects" class="section-padding" style="background-color: var(--bg-tertiary); transition: background var(--transition-normal);">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Projects</h2>
+                    <p>A selection of projects that showcase my development and data analysis skills.</p>
+                </div>
+
+                <!-- Filters -->
+                <div class="projects-filter reveal">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="ai-ml">AI & ML</button>
+                    <button class="filter-btn" data-filter="data-analysis">Data Analysis</button>
+                    <button class="filter-btn" data-filter="software">Software</button>
+                </div>
+
+                <!-- Grid -->
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="glass-panel project-card reveal" data-category="data-analysis">
+                        <div class="project-visual">
+                            <div class="project-grid-overlay"></div>
+                            <div class="project-icon-wrapper">
+                                <i data-lucide="trending-up"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">Pandas</span>
+                                <span class="project-tag">Matplotlib</span>
+                            </div>
+                            <h3 class="project-title">IPL Data Analysis Application</h3>
+                            <p class="project-desc">
+                                A comprehensive python data analysis toolkit evaluating multi-season IPL tournament datasets. Visualizes batting, bowling averages, and team run progressions using matplotlib graphics.
+                            </p>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i data-lucide="github"></i>
+                                    <span>Code</span>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i data-lucide="external-link"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="glass-panel project-card reveal" data-category="ai-ml">
+                        <div class="project-visual">
+                            <div class="project-grid-overlay"></div>
+                            <div class="project-icon-wrapper">
+                                <i data-lucide="scan-eye"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="project-tag">Machine Learning</span>
+                                <span class="project-tag">Image Processing</span>
+                                <span class="project-tag">Python</span>
+                            </div>
+                            <h3 class="project-title">Crop Disease Detector</h3>
+                            <p class="project-desc">
+                                An intelligent software system that evaluates digital agricultural leaves and detects visual markers of crop diseases. Utilizes classification algorithms to assist smart farming protocols.
+                            </p>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i data-lucide="github"></i>
+                                    <span>Code</span>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i data-lucide="external-link"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="glass-panel project-card reveal" data-category="software">
+                        <div class="project-visual">
+                            <div class="project-grid-overlay"></div>
+                            <div class="project-icon-wrapper">
+                                <i data-lucide="help-circle"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">Tkinter GUI</span>
+                                <span class="project-tag">Interactive</span>
+                            </div>
+                            <h3 class="project-title">Quiz Application</h3>
+                            <p class="project-desc">
+                                An interactive quiz desktop application featuring category selections, dynamic score counters, and randomized query sequences using a clean python GUI layout.
+                            </p>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i data-lucide="github"></i>
+                                    <span>Code</span>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i data-lucide="external-link"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             ACHIEVEMENTS SECTION
+             ========================================== -->
+        <section id="achievements" class="section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Achievements</h2>
+                    <p>Highlights of my academic and practical journey.</p>
+                </div>
+
+                <div class="achievements-grid">
+                    <!-- Achievement 1 -->
+                    <div class="glass-panel achievement-card reveal">
+                        <div class="achievement-icon">
+                            <i data-lucide="award"></i>
+                        </div>
+                        <h3>AI & ML Student</h3>
+                        <p>Currently maintaining excellent grades in my B.Tech curriculum at REVA University while actively researching core neural networks and deep learning libraries.</p>
+                    </div>
+
+                    <!-- Achievement 2 -->
+                    <div class="glass-panel achievement-card reveal">
+                        <div class="achievement-icon">
+                            <i data-lucide="code-2"></i>
+                        </div>
+                        <h3>Project Development</h3>
+                        <p>Constructed three full-scope individual projects utilizing Python, Pandas, Tkinter, and machine learning components inside my initial year of studies.</p>
+                    </div>
+
+                    <!-- Achievement 3 -->
+                    <div class="glass-panel achievement-card reveal">
+                        <div class="achievement-icon">
+                            <i data-lucide="bar-chart-4"></i>
+                        </div>
+                        <h3>Data Analysis</h3>
+                        <p>Built visual IPL cricket databases, aggregating match files and constructing clean charts representing player ratings and performances.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             RESUME SECTION
+             ========================================== -->
+        <section id="resume" class="section-padding resume-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Resume</h2>
+                    <p>Take a look at my brief academic CV, or download a printable copy.</p>
+                </div>
+
+                <div class="resume-wrapper">
+                    <!-- Mini Resume Paper View -->
+                    <div class="glass-panel resume-visual-box reveal">
+                        <div class="resume-paper-header">
+                            <div class="resume-paper-name">
+                                <h3>Vinay P</h3>
+                                <p>Future AI & ML Engineer</p>
+                            </div>
+                            <div class="resume-paper-meta">
+                                <p>vinay.p@reva.edu.in</p>
+                                <p>REVA University, Bengaluru</p>
+                            </div>
+                        </div>
+
+                        <div class="resume-paper-section">
+                            <h4>Education</h4>
+                            <div class="resume-paper-list">
+                                <div class="resume-paper-item">
+                                    <span>B.Tech in Artificial Intelligence and Machine Learning</span>
+                                    <span>2025 - Present</span>
+                                </div>
+                                <div class="resume-paper-item" style="font-size: 0.85rem; color: var(--text-muted); margin-top: -0.25rem;">
+                                    <span>REVA University | 1st Year Student</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="resume-paper-section">
+                            <h4>Key Technical Competencies</h4>
+                            <div class="resume-paper-list">
+                                <div class="resume-paper-item">
+                                    <span>Languages</span>
+                                    <span>Python, Java, C, C++, HTML</span>
+                                </div>
+                                <div class="resume-paper-item">
+                                    <span>Libraries & Tools</span>
+                                    <span>Pandas, NumPy, Matplotlib, VS Code, GitHub, Git</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="resume-paper-section">
+                            <h4>Core Projects</h4>
+                            <div class="resume-paper-list">
+                                <div class="resume-paper-item">
+                                    <span>IPL Data Analysis Application</span>
+                                    <span>Python, Pandas</span>
+                                </div>
+                                <div class="resume-paper-item">
+                                    <span>Crop Disease Detector</span>
+                                    <span>Machine Learning</span>
+                                </div>
+                                <div class="resume-paper-item">
+                                    <span>Quiz Application</span>
+                                    <span>Python, Tkinter GUI</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Download Trigger Button -->
+                    <div class="reveal">
+                        <button class="btn btn-primary" id="download-resume-btn">
+                            <i data-lucide="download"></i>
+                            <span>Download Full Resume</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             CONTACT SECTION
+             ========================================== -->
+        <section id="contact" class="section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Contact Me</h2>
+                    <p>Have an inquiry, project, or want to say hello? Drop a line below.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Info Cards -->
+                    <div class="contact-info-cards reveal-left">
+                        <!-- Card 1 -->
+                        <div class="glass-panel contact-item-card">
+                            <div class="contact-icon">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div class="contact-details-text">
+                                <h4>Email</h4>
+                                <p><a href="mailto:vinay.p@example.com">vinay.p@example.com</a></p>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="glass-panel contact-item-card">
+                            <div class="contact-icon">
+                                <i data-lucide="linkedin"></i>
+                            </div>
+                            <div class="contact-details-text">
+                                <h4>LinkedIn</h4>
+                                <p><a href="https://linkedin.com/in/vinay-p-placeholder" target="_blank" rel="noopener">linkedin.com/in/vinay-p</a></p>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="glass-panel contact-item-card">
+                            <div class="contact-icon">
+                                <i data-lucide="github"></i>
+                            </div>
+                            <div class="contact-details-text">
+                                <h4>GitHub</h4>
+                                <p><a href="https://github.com/vinay-p-placeholder" target="_blank" rel="noopener">github.com/vinay-p</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="glass-panel contact-form reveal-right">
+                        <h3 class="form-title">Send a Message</h3>
+                        <form id="portfolio-contact-form">
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="form-name">Name</label>
+                                    <input type="text" id="form-name" class="form-control" placeholder="John Doe" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-email">Email</label>
+                                    <input type="email" id="form-email" class="form-control" placeholder="john@example.com" required>
+                                </div>
+                                <div class="form-group form-group-full">
+                                    <label for="form-subject">Subject</label>
+                                    <input type="text" id="form-subject" class="form-control" placeholder="Collab proposal" required>
+                                </div>
+                                <div class="form-group form-group-full">
+                                    <label for="form-message">Message</label>
+                                    <textarea id="form-message" class="form-control" placeholder="Hi Vinay, I'd like to discuss a project..." required></textarea>
+                                </div>
+                                <div class="form-group form-group-full" style="margin-top: 0.5rem;">
+                                    <button type="submit" class="btn btn-primary" style="width: auto; align-self: flex-start;">
+                                        <i data-lucide="send"></i>
+                                        <span>Send Message</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- Form Success/Failure Toasts -->
+                        <div class="form-toast success" id="contact-success">
+                            <i data-lucide="check-circle-2"></i>
+                            <span>Thank you! Your message has been sent successfully.</span>
+                        </div>
+                        <div class="form-toast error" id="contact-error">
+                            <i data-lucide="alert-triangle"></i>
+                            <span>Oops! Something went wrong. Please check fields and try again.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==========================================
+         FOOTER
+         ========================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <a href="#home" class="footer-logo">
+                    <i data-lucide="cpu" style="color: var(--accent-blue);"></i>
+                    <span>Vinay.P</span>
+                </a>
+                <div class="footer-socials">
+                    <a href="mailto:vinay.p@example.com" class="icon-btn" aria-label="Mail"><i data-lucide="mail"></i></a>
+                    <a href="https://linkedin.com/in/vinay-p-placeholder" target="_blank" rel="noopener" class="icon-btn" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                    <a href="https://github.com/vinay-p-placeholder" target="_blank" rel="noopener" class="icon-btn" aria-label="GitHub"><i data-lucide="github"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Vinay P. All rights reserved.</p>
+                <p>Built with <i data-lucide="heart" class="footer-heart"></i> for AI & ML Engineering</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==========================================
+         SHARE DIALOG MODAL
+         ========================================== -->
+    <div class="modal-overlay" id="share-modal-overlay">
+        <div class="glass-panel modal-box">
+            <button class="modal-close" id="modal-close-btn" aria-label="Close Modal">
+                <i data-lucide="x"></i>
+            </button>
+            <h3 class="modal-title">Share Portfolio</h3>
+            <p class="modal-desc">Share my e-portfolio with your network or copy the link below.</p>
+            
+            <div class="modal-link-box">
+                <span class="modal-url" id="share-url-text">https://vinay-p.github.io/portfolio</span>
+                <button class="modal-copy-btn" id="modal-copy-btn">Copy</button>
+            </div>
+
+            <div class="modal-socials-grid">
+                <button class="share-social-btn share-twitter" id="share-twitter-btn">
+                    <i data-lucide="twitter"></i>
+                    <span>Twitter</span>
+                </button>
+                <button class="share-social-btn share-linkedin" id="share-linkedin-btn">
+                    <i data-lucide="linkedin"></i>
+                    <span>LinkedIn</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Clipboard copy success toast -->
+    <div class="toast-notice" id="copy-toast">
+        <i data-lucide="copy-check"></i>
+        <span>Link copied to clipboard!</span>
+    </div>
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Custom Page Script -->
+    <script src="script.js"></script>
+</body>
+</html>
